@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Configurações básicas da página -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Descrição para mecanismos de busca -->
+  <meta name="description" content="Portfólio profissional de Lauana Verges, desenvolvedora Full Stack." />
+
+  <!-- Fonte utilizada no projeto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Lauana Verges | Desenvolvedora Full Stack</title>
+</head>
+
+<body>
+  <!-- ======================================================
+         CABEÇALHO E MENU DE NAVEGAÇÃO
+    ======================================================= -->
+  <header class="header-site">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar" aria-label="Navegação principal">
+
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="#inicio"> LV<span>|DEV</span> </a>
+
+        <!-- Botão do menu mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links do menu -->
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio"> Início </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre"> Sobre </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#stack"> Stack </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos"> Projetos </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#formacao"> Formação </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contato"> Contato </a>
+            </li>
+          </ul>
+
+          <!-- Botão de contato -->
+          <a href="#contato" class="btn btn-gradient navbar-contact">
+            Fale comigo
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ======================================================
+         CONTEÚDO PRINCIPAL
+    ======================================================= -->
+  <main>
+    <!-- ==================================================
+             SEÇÃO INICIAL / HERO
+        =================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container">
+        <div class="row align-items-center min-vh-100 objet-fit-cover g-5">
+          <!-- Conteúdo textual -->
+          <div class="col-lg-6 hero-content">
+            <span class="section-label"> Desenvolvedora Full Stack </span>
+
+            <h1 class="hero-title">
+              Olá, eu sou
+              <span>Lauana</span>
+              <span class="code-symbol">&lt;/&gt;</span>
+            </h1>
+
+            <h2 class="hero-subtitle">
+              Transformo ideias em experiências digitais modernas, funcionais
+              e responsivas.
+            </h2>
+
+            <p class="hero-description">
+              Desenvolvo interfaces e aplicações web com foco em organização,
+              desempenho, usabilidade e código de fácil manutenção.
+            </p>
+
+            <!-- Botões principais -->
+            <div class="hero-actions">
+              <a href="./arquivos/curriculo-lauana-verges.pdf" class="btn btn-gradient btn-main" download>
+                <i class="bi bi-download"></i>
+                Baixar currículo
+              </a>
+
+              <!-- Redes sociais -->
+              <div class="social-links">
+                <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="social-button"
+                  aria-label="Acessar perfil no GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer"
+                  class="social-button" aria-label="Acessar perfil no LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="mailto:seuemail@email.com" class="social-button" aria-label="Enviar e-mail">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Avatar -->
+          <div class="col-lg-6 hero-image-column">
+            <div class="hero-image-wrapper">
+              <!-- Círculo decorativo atrás da imagem -->
+              <div class="hero-circle"></div>
+
+              <img src="./img/avatar.png" alt="Avatar de Lauana Verges" class="hero-image min-vh-80" id="avatar"
+                style="max-height: 650px;" />
+
+              <!-- Elementos decorativos -->
+              <span class="code-decoration decoration-one"> { } </span>
+
+              <span class="code-decoration decoration-two"> &lt;/&gt; </span>
+
+              <span class="code-decoration decoration-three"> :: </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+             TECNOLOGIAS PRINCIPAIS
+        =================================================== -->
+    <section class="technology-bar" id="stack">
+      <div class="container">
+        <div class="technology-wrapper">
+          <div class="technology-item">
+            <i class="bi bi-filetype-html"></i>
+            <span>HTML</span>
+          </div>
+
+          <div class="technology-divider"></div>
+
+          <div class="technology-item">
+            <i class="bi bi-filetype-css"></i>
+            <span>CSS</span>
+          </div>
+
+          <div class="technology-divider"></div>
+
+          <div class="technology-item">
+            <i class="bi bi-bootstrap-fill"></i>
+            <span>Bootstrap</span>
+          </div>
+
+          <div class="technology-divider"></div>
+
+          <div class="technology-item">
+            <i class="bi bi-filetype-js"></i>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="technology-divider"></div>
+
+          <div class="technology-item">
+            <i class="bi bi-git"></i>
+            <span>Git</span>
+          </div>
+
+          <div class="technology-divider"></div>
+
+          <div class="technology-item">
+            <i class="bi bi-github"></i>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+             SEÇÃO SOBRE
+        =================================================== -->
+    <section class="section-padding" id="sobre">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Texto sobre -->
+          <div class="col-lg-5">
+            <span class="section-label"> Conheça um pouco </span>
+
+            <h2 class="section-title">Sobre <span>mim</span></h2>
+
+            <div class="title-line"></div>
+
+            <p class="section-description">
+              Sou estudante de desenvolvimento web e apaixonada por
+              tecnologia, criatividade e resolução de problemas.
+            </p>
+
+            <p class="section-description">
+              Busco desenvolver projetos que unam uma interface agradável, boa
+              experiência para o usuário e uma estrutura de código organizada.
+            </p>
+
+            <!-- Informações rápidas -->
+            <div class="row statistics">
+              <div class="col-6">
+                <strong>100%</strong>
+                <span>Dedicação</span>
+              </div>
+
+              <div class="col-6">
+                <strong>24/7</strong>
+                <span>Curiosidade</span>
+              </div>
+
+              <div class="col-6">
+                <strong>UI</strong>
+                <span>Design responsivo</span>
+              </div>
+
+              <div class="col-6">
+                <strong>DEV</strong>
+                <span>Desenvolvimento</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bloco de código -->
+          <div class="col-lg-7">
+            <div class="about-code-card">
+              <!-- Cabeçalho do card -->
+              <div class="code-card-header">
+                <span class="code-dot dot-red"></span>
+                <span class="code-dot dot-yellow"></span>
+                <span class="code-dot dot-green"></span>
+              </div>
+
+              <!-- Código decorativo -->
+              <pre><code><span class="code-purple">const</span> Lauana = {
+    <span class="code-pink">area</span>: <span class="code-green">'Desenvolvimento Full Stack'</span>,
+    <span class="code-pink">skills</span>: [
+        <span class="code-green">'HTML'</span>,
+        <span class="code-green">'CSS'</span>,
+        <span class="code-green">'Bootstrap'</span>,
+        <span class="code-green">'JavaScript'</span>
+    ],
+    <span class="code-pink">qualidades</span>: [
+        <span class="code-green">'Criatividade'</span>,
+        <span class="code-green">'Organização'</span>,
+        <span class="code-green">'Aprendizado contínuo'</span>
+    ],
+    <span class="code-pink">objetivo</span>: <span class="code-green">'Criar soluções digitais'</span>
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+             DIFERENCIAIS
+        =================================================== -->
+    <section class="features-section section-padding">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-label">Meu trabalho</span>
+
+          <h2 class="section-title">Como posso <span>contribuir</span></h2>
+
+          <p class="section-description section-description-center">
+            Desenvolvimento de soluções modernas com atenção aos detalhes e à
+            experiência do usuário.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="feature-card h-100">
+              <div class="feature-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+
+              <h3>Código limpo</h3>
+
+              <p>
+                Estruturas organizadas, comentadas e fáceis de compreender e
+                manter.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="feature-card h-100">
+              <div class="feature-icon">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+
+              <h3>Desempenho</h3>
+
+              <p>
+                Interfaces leves, responsivas e otimizadas para diferentes
+                dispositivos.
+              </p>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mx-md-auto">
+            <article class="feature-card h-100">
+              <div class="feature-icon">
+                <i class="bi bi-people"></i>
+              </div>
+
+              <h3>Foco no usuário</h3>
+
+              <p>
+                Experiências intuitivas, acessíveis e pensadas para as
+                necessidades de cada projeto.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+             PROJETOS
+        =================================================== -->
+    <section class="section-padding" id="projetos">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-label">Portfólio</span>
+
+          <h2 class="section-title">Projetos em <span>destaque</span></h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Projeto 1 -->
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card h-100">
+              <div class="project-image">
+                <img src="./img/projeto-1.png" alt="Imagem do projeto de portfólio" class="img-fluid" />
+              </div>
+
+              <div class="project-content">
+                <h3>Portfólio pessoal</h3>
+
+                <p>
+                  Site profissional desenvolvido para apresentar habilidades,
+                  projetos e informações de contato.
+                </p>
+
+                <div class="project-technologies">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="#" aria-label="Visualizar projeto">
+                    Ver projeto
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+
+                  <a href="#" aria-label="Visualizar código no GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Projeto 2 -->
+          <div class="col-md-6 col-xl-4">
+            <article class="project-card h-100">
+              <div class="project-image">
+                <img src="./img/projeto-2.png" alt="Imagem do projeto de landing page" class="img-fluid" />
+              </div>
+
+              <div class="project-content">
+                <h3>Landing page</h3>
+
+                <p>
+                  Página de apresentação moderna com foco em conversão,
+                  responsividade e identidade visual.
+                </p>
+
+                <div class="project-technologies">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="#" aria-label="Visualizar projeto">
+                    Ver projeto
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+
+                  <a href="#" aria-label="Visualizar código no GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Projeto 3 -->
+          <div class="col-md-6 col-xl-4 mx-md-auto">
+            <article class="project-card h-100">
+              <div class="project-image">
+                <img src="./img/projeto-3.png" alt="Imagem do projeto de sistema web" class="img-fluid" />
+              </div>
+
+              <div class="project-content">
+                <h3>Sistema web</h3>
+
+                <p>
+                  Interface de sistema criada para organizar dados e facilitar
+                  tarefas do dia a dia.
+                </p>
+
+                <div class="project-technologies">
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>Git</span>
+                </div>
+
+                <div class="project-links">
+                  <a href="#" aria-label="Visualizar projeto">
+                    Ver projeto
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+
+                  <a href="#" aria-label="Visualizar código no GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+             FORMAÇÃO
+        =================================================== -->
+    <section class="education-section section-padding" id="formacao">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-label">Conhecimento</span>
+
+          <h2 class="section-title">Minha <span>formação</span></h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="timeline">
+              <!-- Formação 1 -->
+              <article class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="bi bi-mortarboard-fill"></i>
+                </div>
+
+                <div class="timeline-card">
+                  <span class="timeline-date"> Em andamento </span>
+
+                  <h3>Técnico em Informática para Internet</h3>
+
+                  <h4>SENAC Paraná</h4>
+
+                  <p>
+                    Desenvolvimento web, lógica de programação, criação de
+                    interfaces, hospedagem e tecnologias para internet.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Formação 2 -->
+              <article class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="bi bi-laptop"></i>
+                </div>
+
+                <div class="timeline-card">
+                  <span class="timeline-date"> Finalizado </span>
+
+                  <h3>Hacker Ético</h3>
+
+                  <h4>ESCOM_CCOMGEX - Escola de Comunicações do Centro de Comunicações e Guerra Eletrônica do Exército
+                  </h4>
+
+                  <p>
+                    Capacitação técnica focada no uso ético e controlado de táticas ofensivas para fortalecimento de
+                    defesas cibernéticas. O curso desenvolve a mentalidade de um atacante (red teaming) para identificar
+                    falhas, testar a resiliência de infraestruturas críticas e propor medidas de mitigação eficientes.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Formação 3 -->
+              <article class="timeline-item">
+                <div class="timeline-icon">
+                  <i class="bi bi-book"></i>
+                </div>
+
+                <div class="timeline-card">
+                  <span class="timeline-date"> Finalizado </span>
+
+                  <h3>Introdução à Cibersegurança</h3>
+
+                  <h4>Cisco Networking Academy</h4>
+
+                  <p>
+                    Curso focado nas bases da segurança cibernética e no impacto do cenário global de ameaças tanto na
+                    vida pessoal quanto no ecossistema corporativo. Proporciona o entendimento de como dados, redes e
+                    sistemas são protegidos contra ataques e vulnerabilidades.
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================
+             CONTATO
+        =================================================== -->
+    <section class="contact-section section-padding" id="contato">
+      <div class="container">
+        <div class="contact-card">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <span class="section-label"> Vamos conversar? </span>
+
+              <h2>
+                Vamos construir algo
+                <span>incrível juntos!</span>
+              </h2>
+
+              <p>
+                Estou disponível para oportunidades, colaborações e novos
+                projetos.
+              </p>
+            </div>
+
+            <div class="col-lg-4 text-lg-end">
+              <a href="mailto:seuemail@email.com" class="btn btn-contact">
+                Entre em contato
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================
+         RODAPÉ
+    ======================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-4">
+          <a class="logo footer-logo" href="#inicio"> LV<span>|DEV</span> </a>
+
+          <p class="footer-copyright">
+            © <span id="currentYear">2026</span>
+            Lauana Verges. Todos os direitos reservados.
+          </p>
+        </div>
+
+        <div class="col-md-4">
+          <nav class="footer-navigation" aria-label="Navegação do rodapé">
+            <a href="#sobre">Sobre</a>
+            <a href="#stack">Stack</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+          </nav>
+        </div>
+
+        <div class="col-md-4">
+          <div class="footer-social">
+            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+
+            <a href="mailto:seuemail@email.com" aria-label="E-mail">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript personalizado -->
+  <script src="script.js"></script>
+</body>
+
+</html>
